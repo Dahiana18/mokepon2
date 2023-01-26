@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Candal&family=Lobster&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Candal&family=Lobster&family=Poppins:wght@300&family=Sigmar+One&display=swap');
+body {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Candal', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sigmar One', cursive;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 50%, #481182 100%);
+
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: lightgray;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: lightgray;
+    font-size: 20px;
+}
+.tarjetas, .tarjetas-ataque {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.tarjeta-de-mokepon img {
+    width: 100px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: antiquewhite;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Candal', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sigmar One', cursive;
+    margin-top: 30px;
+}
+#boton-mascota:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    background-color: gray;
+}
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque-fuego {
+    background-color: orangered;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: wheat;
+}
+.boton-de-ataque-agua {
+    background-color: darkblue;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: wheat;
+}
+.boton-de-ataque-tierra {
+    background-color: brown;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: wheat;
+}
+
+.boton-de-ataque-fuego:hover { 
+    cursor: pointer;
+    background-color: black;
+}
+.boton-de-ataque-agua:hover { 
+    cursor: pointer;
+    background-color: black;
+}
+.boton-de-ataque-tierra:hover { 
+    cursor: pointer;
+    background-color: black;
+}
+#mensajes {
+    width: 280px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Candal', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sigmar One', cursive;
+}
+#boton-reiniciar {
+    border: none;
+    color:  black;
+}
+#boton-reiniciar:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataque {
+        flex-direction: column;
+    }  
+}
